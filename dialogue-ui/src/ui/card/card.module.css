@@ -1,0 +1,23 @@
+.card {
+  border-radius: 10px;
+  padding-inline: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(from var(--charcoal-150) r g b / 0.5);
+  overflow: hidden;
+
+  &:has(> header) {
+    padding-block-end: 1rem;
+  }
+
+  &:not(:has(> header)) {
+    padding-block: 1rem;
+  }
+
+  & > header {
+    background: linear-gradient(45deg, var(--peach-100), var(--peach-150));
+    color: var(--linen-150);
+    padding: 0.7rem 1rem 0.6rem;
+    margin-inline: -1rem;
+    margin-block-end: 1rem;
+  }
+}

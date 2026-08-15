@@ -4,7 +4,7 @@ As a demo for our interview, I've set up this little web app for us to discuss! 
 
 As for what this does, I'm aiming for a mini rescheduler-like thing, that could conceptually be part of dialogue. If an appointment had to be cancelled by the physician in dialogue, I could imagine this application swinging in as a link in an email to allow the user to select from a few other free time options/cancel the appointment.
 
-![Little logo thing](dialogue-ui/public/logo.svg)
+![Little logo thing](dialogue-ui/src/assets/logo.svg)
 
 ![1](planning/1.png)
 

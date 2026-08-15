@@ -14,7 +14,7 @@ export function LandingPage() {
 
   return (
     <section>
-      <h2>Missing Link</h2>
+      <h2>Imagine the rescheduler ui here</h2>
     </section>
   );
 }

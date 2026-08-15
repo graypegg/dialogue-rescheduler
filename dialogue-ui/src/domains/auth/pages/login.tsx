@@ -1,9 +1,10 @@
 import { LoginForm } from "../login-form.tsx";
+import { Card } from "../../../ui/card/card.tsx";
 
 export function LoginPage() {
   return (
-    <section>
+    <Card title="Login">
       <LoginForm />
-    </section>
+    </Card>
   );
 }

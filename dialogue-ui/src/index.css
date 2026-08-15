@@ -2,6 +2,47 @@
   box-sizing: border-box;
 }
 
+:root {
+  font-family: Helvetica, sans-serif;
+
+  /* Grabbed right out of the brand guide >:) https://dialoguebrand.myportfolio.com/fonts */
+  --linen-base: #ffefe2;
+  --charcoal-base: #212120;
+  --sky-base: #c4e6f1;
+  --peach-base: #ec9876;
+
+  --linen-150: hsl(from var(--linen-base) h s calc(l * 1.05));
+  --charcoal-150: hsl(from var(--charcoal-base) h s calc(l * 5));
+  --sky-150: hsl(from var(--sky-base) h s calc(l * 1.05));
+  --peach-150: hsl(from var(--peach-base) h s calc(l * 1.05));
+
+  --linen-125: hsl(from var(--linen-base) h s calc(l * 1.025));
+  --charcoal-125: hsl(from var(--charcoal-base) h s calc(l * 2.5));
+  --sky-125: hsl(from var(--sky-base) h s calc(l * 1.025));
+  --peach-125: hsl(from var(--peach-base) h s calc(l * 1.025));
+
+  --linen-100: var(--linen-base);
+  --charcoal-100: var(--charcoal-base);
+  --sky-100: var(--sky-base);
+  --peach-100: var(--peach-base);
+
+  --linen-75: hsl(from var(--linen-base) h s calc(l * 0.8));
+  --charcoal-75: hsl(from var(--charcoal-base) h s calc(l * 0.8));
+  --sky-75: hsl(from var(--sky-base) h s calc(l * 0.8));
+  --peach-75: hsl(from var(--peach-base) h s calc(l * 0.8));
+
+  --linen-50: hsl(from var(--linen-base) h s calc(l * 0.2));
+  --charcoal-50: hsl(from var(--charcoal-base) h s calc(l * 0.2));
+  --sky-50: hsl(from var(--sky-base) h s calc(l * 0.2));
+  --peach-50: hsl(from var(--peach-base) h s calc(l * 0.2));
+}
+
 body {
   margin: 0;
+  background: var(--linen-125);
+  color: var(--charcoal-100);
+}
+
+a {
+  color: var(--charcoal-100);
 }

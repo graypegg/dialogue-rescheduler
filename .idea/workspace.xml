@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="it wooooorks, switching over to jwts though i think">
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Neaaaat, vite just has a proxy built in, nevermind about jwts">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/layout.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/main.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/.env" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/static/pages/landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/static/pages/landing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/pages/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/router.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +69,14 @@
     "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786811581716",
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/domains/auth/api",
+    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
     "npm.install --dev -D oxfmt.executor": "Run",
     "npm.install @tanstack/react-query.executor": "Run",
+    "npm.install clsx.executor": "Run",
     "npm.install react-hook-form.executor": "Run",
     "npm.install react-router.executor": "Run",
     "ruby.structure.view.model.defaults.configured": "true",
@@ -69,16 +87,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/layout" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/input" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/assets" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/types" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/login-form-state.ts" />
@@ -100,6 +120,7 @@
       <command value="npm install react-hook-form" />
       <command value="npm install @tanstack/react-query" />
       <command value="npm install react-router" />
+      <command value="npm install clsx" />
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -219,7 +240,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="14611000" />
+      <workItem from="1786817890168" duration="19222000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -325,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786831119530</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Neaaaat, vite just has a proxy built in, nevermind about jwts">
+      <option name="closed" value="true" />
+      <created>1786832568071</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1786832568071</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,6 +374,7 @@
     <MESSAGE value="much less of my ruby-brained DTO classes haha" />
     <MESSAGE value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
     <MESSAGE value="it wooooorks, switching over to jwts though i think" />
-    <option name="LAST_COMMIT_MESSAGE" value="it wooooorks, switching over to jwts though i think" />
+    <MESSAGE value="Neaaaat, vite just has a proxy built in, nevermind about jwts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Neaaaat, vite just has a proxy built in, nevermind about jwts" />
   </component>
 </project>
