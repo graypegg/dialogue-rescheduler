@@ -1,17 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="first off, checking the rails session">
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user-form-state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="checkpoint, just going back to simple dto interfaces I think">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,7 +216,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="8188000" />
+      <workItem from="1786817890168" duration="8758000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -295,7 +290,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786822987767</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="checkpoint, just going back to simple dto interfaces I think">
+      <option name="closed" value="true" />
+      <created>1786826131983</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1786826131983</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +314,7 @@
     <MESSAGE value="CORS for the rails api, whoops" />
     <MESSAGE value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
     <MESSAGE value="first off, checking the rails session" />
-    <option name="LAST_COMMIT_MESSAGE" value="first off, checking the rails session" />
+    <MESSAGE value="checkpoint, just going back to simple dto interfaces I think" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpoint, just going back to simple dto interfaces I think" />
   </component>
 </project>

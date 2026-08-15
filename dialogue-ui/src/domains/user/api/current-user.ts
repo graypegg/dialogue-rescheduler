@@ -1,9 +1,10 @@
 import { useQuery } from "@tanstack/react-query";
 import { fetchAs } from "../../api/helpers.ts";
-import { UserReadDTO } from "../types/dto.ts";
+import type { UserReadDTO } from "../types/dto.ts";
+import { fromUserReadDTO } from "../types/user.ts";
 
 function getCurrentUser() {
-  return fetchAs(UserReadDTO, "/session");
+  return fetchAs<UserReadDTO>("/session");
 }
 
 export function useGetCurrentUser() {
@@ -13,5 +14,5 @@ export function useGetCurrentUser() {
     staleTime: Infinity,
   });
 
-  return { currentUser: data?.asLocal() ?? null, isLoading };
+  return { currentUser: data ? fromUserReadDTO(data) : null, isLoading };
 }
