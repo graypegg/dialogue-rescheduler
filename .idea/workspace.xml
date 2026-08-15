@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="CORS for the rails api and forgot to add back the cookies stuff, whoops">
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/query-client-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="first off, checking the rails session">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user-form-state.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.node.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +59,7 @@
     "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786811581716",
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue",
+    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/domains/user/api",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -79,11 +74,20 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/types" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user" />
       <recent name="$PROJECT_DIR$/planning" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user-form-state.ts" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/types.ts" />
     </key>
   </component>
   <component name="RubyModuleManagerSettings">
@@ -217,7 +221,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="5021000" />
+      <workItem from="1786817890168" duration="8188000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -283,7 +287,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786821230429</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="first off, checking the rails session">
+      <option name="closed" value="true" />
+      <created>1786822987767</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1786822987767</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +310,7 @@
     <MESSAGE value="bassssic user form" />
     <MESSAGE value="CORS for the rails api, whoops" />
     <MESSAGE value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
-    <option name="LAST_COMMIT_MESSAGE" value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
+    <MESSAGE value="first off, checking the rails session" />
+    <option name="LAST_COMMIT_MESSAGE" value="first off, checking the rails session" />
   </component>
 </project>

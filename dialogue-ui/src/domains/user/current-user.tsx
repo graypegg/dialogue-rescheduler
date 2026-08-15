@@ -1,12 +1,6 @@
 import { createContext, type PropsWithChildren } from "react";
 import { useGetCurrentUser } from "./api/current-user.ts";
-
-export interface User {
-  id: number;
-  user_name: string;
-}
-
-export type UserLogInParams = Pick<User, "user_name"> & { password: string };
+import type { User, UserLogInParams } from "./types/user.ts";
 
 export interface CurrentUser {
   isLoggedIn: boolean;

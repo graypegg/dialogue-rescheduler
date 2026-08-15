@@ -1,25 +1,16 @@
 import { useForm } from "react-hook-form";
-import type { User, UserLogInParams } from "./api/current-user.ts";
-
-export interface UserFormState extends UserLogInParams {
-  id: number | null;
-}
-
-function makeUserFormState(user: User | null): UserFormState {
-  if (user) return { ...user, password: "" };
-  return { id: null, user_name: "", password: "" };
-}
+import { makeUserFormState, type UserFormState } from "./types/user-form-state.ts";
+import type { User } from "./types/user.ts";
 
 interface UserFormProps {
   user: User | null;
+  onSubmit: (formState: UserFormState) => void;
 }
 
-export function UserForm({ user }: UserFormProps) {
+export function UserForm({ user, onSubmit }: UserFormProps) {
   const { register, handleSubmit } = useForm<UserFormState>({
     defaultValues: makeUserFormState(user),
   });
-
-  function onSubmit() {}
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
