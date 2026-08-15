@@ -1,27 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="much less of my ruby-brained DTO classes haha">
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/login-form-state.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/static/pages/landing.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/pages/sign-up.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/router.tsx" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/api/dto.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/current-user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" afterDir="false" />
     </list>
@@ -238,7 +222,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="12475000" />
+      <workItem from="1786817890168" duration="12978000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -328,7 +312,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786826714482</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe">
+      <option name="closed" value="true" />
+      <created>1786830460764</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1786830460764</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,6 +338,7 @@
     <MESSAGE value="first off, checking the rails session" />
     <MESSAGE value="checkpoint, just going back to simple dto interfaces I think" />
     <MESSAGE value="much less of my ruby-brained DTO classes haha" />
-    <option name="LAST_COMMIT_MESSAGE" value="much less of my ruby-brained DTO classes haha" />
+    <MESSAGE value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
   </component>
 </project>
