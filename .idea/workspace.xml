@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="oxfmt">
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="CORS for the rails api and forgot to add back the cookies stuff, whoops">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/query-client-provider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/current-user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/tsconfig.node.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +28,7 @@
       <list>
         <option value="Ruby Module" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -60,6 +70,7 @@
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
     "npm.install --dev -D oxfmt.executor": "Run",
+    "npm.install @tanstack/react-query.executor": "Run",
     "npm.install react-hook-form.executor": "Run",
     "ruby.structure.view.model.defaults.configured": "true",
     "settings.editor.selected.configurable": "OxlintConfigurable",
@@ -69,6 +80,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user" />
       <recent name="$PROJECT_DIR$/planning" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -84,6 +97,7 @@
     <option name="myCommands">
       <command value="npm install --dev -D oxfmt" />
       <command value="npm install react-hook-form" />
+      <command value="npm install @tanstack/react-query" />
     </option>
   </component>
   <component name="RunManager" selected="Rails.dialogue-api">
@@ -203,7 +217,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="1470000" />
+      <workItem from="1786817890168" duration="5021000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -245,7 +259,31 @@
       <option name="project" value="LOCAL" />
       <updated>1786817941209</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="bassssic user form">
+      <option name="closed" value="true" />
+      <created>1786819378304</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1786819378304</updated>
+    </task>
+    <task id="LOCAL-00007" summary="CORS for the rails api, whoops">
+      <option name="closed" value="true" />
+      <created>1786821196288</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1786821196288</updated>
+    </task>
+    <task id="LOCAL-00008" summary="CORS for the rails api and forgot to add back the cookies stuff, whoops">
+      <option name="closed" value="true" />
+      <created>1786821230429</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1786821230429</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +295,9 @@
     <MESSAGE value="readme blurb, clearing out default vite junk" />
     <MESSAGE value="some basic planning, got a plan for a neat time block picker at least" />
     <MESSAGE value="oxfmt" />
-    <option name="LAST_COMMIT_MESSAGE" value="oxfmt" />
+    <MESSAGE value="bassssic user form" />
+    <MESSAGE value="CORS for the rails api, whoops" />
+    <MESSAGE value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
+    <option name="LAST_COMMIT_MESSAGE" value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
   </component>
 </project>

@@ -46,10 +46,10 @@
     <orderEntry type="library" scope="PROVIDED" name="bcrypt_pbkdf (v1.1.2, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bigdecimal (v4.1.2, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.25.0, mise: 4.0.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="brakeman (v8.0.6, mise: 4.0.5) [gem]" level="application" />
+    <orderEntry type="library" scope="TEST" name="brakeman (v8.0.6, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.3.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v4.0.10, mise: 4.0.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler-audit (v0.9.3, mise: 4.0.5) [gem]" level="application" />
+    <orderEntry type="library" scope="TEST" name="bundler-audit (v0.9.3, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.3.8, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v3.0.2, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.7, mise: 4.0.5) [gem]" level="application" />
@@ -99,6 +99,7 @@
     <orderEntry type="library" scope="PROVIDED" name="raabro (v1.5.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.8.1, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack (v3.2.7, mise: 4.0.5) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rack-cors (v3.0.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-session (v2.1.2, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rack-test (v2.2.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rackup (v2.3.1, mise: 4.0.5) [gem]" level="application" />
@@ -116,7 +117,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rubocop-ast (v1.50.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-performance (v1.26.1, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubocop-rails (v2.36.0, mise: 4.0.5) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rubocop-rails-omakase (v1.1.0, mise: 4.0.5) [gem]" level="application" />
+    <orderEntry type="library" scope="TEST" name="rubocop-rails-omakase (v1.1.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-vips (v2.3.0, mise: 4.0.5) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, mise: 4.0.5) [gem]" level="application" />

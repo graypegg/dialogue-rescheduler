@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import type { User, UserLogInParams } from "./current-user.tsx";
+import type { User, UserLogInParams } from "./api/current-user.ts";
 
 export interface UserFormState extends UserLogInParams {
   id: number | null;

@@ -1,4 +1,5 @@
-import { createContext, type PropsWithChildren, useState } from "react";
+import { createContext, type PropsWithChildren } from "react";
+import { useGetCurrentUser } from "./api/current-user.ts";
 
 export interface User {
   id: number;
@@ -8,18 +9,24 @@ export interface User {
 export type UserLogInParams = Pick<User, "user_name"> & { password: string };
 
 export interface CurrentUser {
+  isLoggedIn: boolean;
   currentUser: User | null;
   logInAs: (logInParams: UserLogInParams) => void;
 }
 
-const currentUserContext = createContext<User | null>(null);
+const currentUserContext = createContext<CurrentUser>({
+  isLoggedIn: false,
+  currentUser: null,
+  logInAs: () => {},
+});
 
 export function CurrentUserProvider({ children }: PropsWithChildren<{}>) {
-  const [currentUser, setCurrentUser] = useState<User | null>(null);
+  const { currentUser, isLoading } = useGetCurrentUser();
 
   const value = {
+    isLoggedIn: Boolean(currentUser) && !isLoading,
     currentUser,
-    logInAs: () => {}, // todo: tanstack query ??? lateer
+    logInAs: () => {},
   };
 
   return <currentUserContext.Provider value={value}>{children}</currentUserContext.Provider>;
