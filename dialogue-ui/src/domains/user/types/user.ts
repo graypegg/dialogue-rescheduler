@@ -12,10 +12,10 @@ export type UserLogInParams = Pick<User, "user_name"> & { password: string };
  * I know these mappers aren't doing much right now!
  * I just prefer clear lines between DTO + local interfaces. Makes handling API changes much easier!
  */
-export function fromUserReadDTO({ id, user_name }: UserReadDTO): User {
-  return { id, user_name };
+export function fromUserReadDTO({ user }: UserReadDTO): User {
+  return { id: user.id, user_name: user.user_name };
 }
 
 export function toUserWriteDTO({ user_name, password }: UserLogInParams): UserWriteDTO {
-  return { user_name, password };
+  return { user: { user_name, password } };
 }

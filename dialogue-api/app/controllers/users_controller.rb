@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  allow_unauthenticated_access only: %i[ new create ]
+  allow_unauthenticated_access only: %i[ create ]
   before_action :set_user, only: %i[ show update destroy ]
 
   # GET /users
@@ -47,6 +47,6 @@ class UsersController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def user_params
-      params.expect(user: [ :user_name, :password ])
+      params.permit(:user_name, :password)
     end
 end
