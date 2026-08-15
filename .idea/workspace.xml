@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe">
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="it wooooorks, switching over to jwts though i think">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/types/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/.env" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <command value="npm install react-router" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.dialogue-api">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dialogue-api" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="dialogue-api" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -222,7 +219,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="12978000" />
+      <workItem from="1786817890168" duration="14611000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -320,7 +317,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786830460764</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="it wooooorks, switching over to jwts though i think">
+      <option name="closed" value="true" />
+      <created>1786831119530</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1786831119530</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +344,7 @@
     <MESSAGE value="checkpoint, just going back to simple dto interfaces I think" />
     <MESSAGE value="much less of my ruby-brained DTO classes haha" />
     <MESSAGE value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
+    <MESSAGE value="it wooooorks, switching over to jwts though i think" />
+    <option name="LAST_COMMIT_MESSAGE" value="it wooooorks, switching over to jwts though i think" />
   </component>
 </project>
