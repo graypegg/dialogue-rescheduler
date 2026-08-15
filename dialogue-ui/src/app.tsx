@@ -1,3 +1,3 @@
-export function App () {
-  return <>asldkfjasldkfj</>
+export function App() {
+  return <>asldkfjasldkfj</>;
 }

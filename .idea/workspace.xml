@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="readme blurb, clearing out default vite junk">
-      <change afterPath="$PROJECT_DIR$/planning/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/planning/2.jpg" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="some basic planning, got a plan for a neat time block picker at least">
+      <change afterPath="$PROJECT_DIR$/.idea/OxcSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/OxfmtSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/current-user.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/public/favicon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Module" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -55,10 +59,13 @@
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
     "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
+    "npm.install --dev -D oxfmt.executor": "Run",
     "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "Settings.Markdown",
+    "settings.editor.selected.configurable": "OxlintConfigurable",
     "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -74,6 +81,11 @@
       <list>
         <option value="$PROJECT_DIR$" />
       </list>
+    </option>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="npm install --dev -D oxfmt" />
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -192,7 +204,8 @@
       <workItem from="1786811522720" duration="105000" />
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
-      <workItem from="1786811903984" duration="4795000" />
+      <workItem from="1786811903984" duration="5389000" />
+      <workItem from="1786817890168" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -218,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786813378129</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="some basic planning, got a plan for a neat time block picker at least">
+      <option name="closed" value="true" />
+      <created>1786817320334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1786817320334</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,6 +249,7 @@
     <MESSAGE value="moved everything one directory deep so we can fit the front end in" />
     <MESSAGE value="fresh vite project added" />
     <MESSAGE value="readme blurb, clearing out default vite junk" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme blurb, clearing out default vite junk" />
+    <MESSAGE value="some basic planning, got a plan for a neat time block picker at least" />
+    <option name="LAST_COMMIT_MESSAGE" value="some basic planning, got a plan for a neat time block picker at least" />
   </component>
 </project>
