@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="fresh vite project added">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/assets/.gitkeep" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="readme blurb, clearing out default vite junk">
+      <change afterPath="$PROJECT_DIR$/planning/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/planning/2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/assets/hero.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/assets/vite.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/favicon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/public/favicon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/icons.svg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +63,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/planning" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RubyModuleManagerSettings">
     <option name="blackListedRootsPaths">
       <list>
@@ -190,7 +192,7 @@
       <workItem from="1786811522720" duration="105000" />
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
-      <workItem from="1786811903984" duration="1451000" />
+      <workItem from="1786811903984" duration="4795000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -208,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786811930301</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="readme blurb, clearing out default vite junk">
+      <option name="closed" value="true" />
+      <created>1786813378129</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1786813378129</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +227,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="moved everything one directory deep so we can fit the front end in" />
     <MESSAGE value="fresh vite project added" />
-    <option name="LAST_COMMIT_MESSAGE" value="fresh vite project added" />
+    <MESSAGE value="readme blurb, clearing out default vite junk" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme blurb, clearing out default vite junk" />
   </component>
 </project>
