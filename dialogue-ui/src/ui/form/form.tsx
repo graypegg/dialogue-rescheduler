@@ -4,7 +4,7 @@ import { type FieldValues, FormProvider, type UseFormReturn } from "react-hook-f
 
 interface FormProps<T extends FieldValues> {
   onSubmit: (formState: T) => void;
-  form: UseFormReturn<T, any, T>;
+  form: UseFormReturn<any, any, any>;
 }
 
 export function Form<T extends FieldValues>({

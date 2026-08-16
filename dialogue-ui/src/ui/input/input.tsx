@@ -7,7 +7,17 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export function Input({ fieldName, ...rest }: InputProps) {
-  const { register } = useFormContext();
+  const {
+    register,
+    formState: { errors },
+  } = useFormContext();
 
-  return <input className={classes.input} {...register(fieldName)} {...rest} />;
+  return (
+    <input
+      {...register(fieldName)}
+      className={classes.input}
+      aria-invalid={errors[fieldName] ? "true" : "false"}
+      {...rest}
+    />
+  );
 }

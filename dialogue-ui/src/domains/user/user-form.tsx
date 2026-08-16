@@ -4,6 +4,8 @@ import type { User } from "./types/user.ts";
 import { Input } from "../../ui/input/input.tsx";
 import { Form } from "../../ui/form/form.tsx";
 import { FormRow } from "../../ui/form-row/form-row.tsx";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 
 interface UserFormProps {
   user: User | null;
@@ -11,8 +13,14 @@ interface UserFormProps {
 }
 
 export function UserForm({ user, onSubmit }: UserFormProps) {
-  const form = useForm<UserFormState>({
+  const form = useForm({
     defaultValues: makeUserFormState(user),
+    resolver: zodResolver(
+      z.object({
+        user_name: z.string().nonempty(),
+        password: z.string().min(6),
+      }),
+    ),
   });
 
   return (
