@@ -9,10 +9,14 @@ function getCurrentUser() {
 
 export function useGetCurrentUser() {
   const { data, isLoading } = useQuery({
-    queryKey: ["users", "current"],
+    queryKey: makeCurrentUserQueryKey(),
     queryFn: getCurrentUser,
     staleTime: Infinity,
   });
 
   return { currentUser: data && "id" in data ? fromUserReadDTO(data) : null, isLoading };
+}
+
+export function makeCurrentUserQueryKey() {
+  return ["users", "current"];
 }

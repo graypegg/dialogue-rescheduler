@@ -6,14 +6,14 @@ import { BrowserRouter } from "react-router";
 
 export function App() {
   return (
-    <QueryClientProvider>
-      <CurrentUserProvider>
-        <BrowserRouter>
+    <BrowserRouter>
+      <QueryClientProvider>
+        <CurrentUserProvider>
           <Main>
             <Router />
           </Main>
-        </BrowserRouter>
-      </CurrentUserProvider>
-    </QueryClientProvider>
+        </CurrentUserProvider>
+      </QueryClientProvider>
+    </BrowserRouter>
   );
 }

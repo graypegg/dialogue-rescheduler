@@ -1,10 +1,10 @@
-import { LoginForm } from "../login-form.tsx";
+import { LogInForm } from "../log-in-form.tsx";
 import { Card } from "../../../ui/card/card.tsx";
 
-export function LoginPage() {
+export function LogInPage() {
   return (
     <Card title="Login">
-      <LoginForm />
+      <LogInForm />
     </Card>
   );
 }

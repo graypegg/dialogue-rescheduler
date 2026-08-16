@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
   def create
     if user = User.authenticate_by(params.permit(:user_name, :password))
       start_new_session_for user
-      render json: { error: false }
+      render json: user
     else
       render json: { error: "Username or password incorrect" }
     end

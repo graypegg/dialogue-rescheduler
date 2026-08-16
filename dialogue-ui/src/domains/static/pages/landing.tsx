@@ -8,7 +8,7 @@ export function LandingPage() {
   const { currentUser, isLoading } = useCurrentUser();
   useEffect(() => {
     if (!currentUser && !isLoading) {
-      navigate("/login");
+      navigate("/log-in");
     }
   }, [currentUser, isLoading, navigate]);
 

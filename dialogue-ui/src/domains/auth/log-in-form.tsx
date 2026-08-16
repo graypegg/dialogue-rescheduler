@@ -1,19 +1,19 @@
 import { useForm } from "react-hook-form";
-import type { LoginFormState } from "./types/login-form-state.ts";
-import { useLogin } from "./api/login.ts";
+import type { LogInFormState } from "./types/log-in-form-state.ts";
 import { useNavigate } from "react-router";
 import { Input } from "../../ui/input/input.tsx";
+import { useCurrentUser } from "./hooks/current-user.tsx";
 
-export function LoginForm() {
+export function LogInForm() {
   const navigate = useNavigate();
-  const login = useLogin();
+  const { logIn } = useCurrentUser();
 
-  const { register, handleSubmit } = useForm<LoginFormState>({
+  const { register, handleSubmit } = useForm<LogInFormState>({
     defaultValues: { user_name: "", password: "" },
   });
 
-  async function onSubmit(loginFormState: LoginFormState) {
-    await login.mutate(loginFormState);
+  async function onSubmit(logInFormState: LogInFormState) {
+    logIn(logInFormState);
     navigate("/");
   }
 

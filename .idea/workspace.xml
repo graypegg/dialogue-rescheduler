@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Neaaaat, vite just has a proxy built in, nevermind about jwts">
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/main.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Some basic UI over dinner">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-in.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/public/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/assets/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/current-user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/login.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-out.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/login-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/pages/log-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/login-form-state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/log-in-form-state.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/static/pages/landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/static/pages/landing.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/pages/sign-up.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/layout/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/router.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,7 +62,7 @@
     "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786811581716",
     "git-widget-placeholder": "main",
     "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui",
+    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/domains/auth/api",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -82,14 +75,15 @@
     "ruby.structure.view.model.defaults.configured": "true",
     "settings.editor.selected.configurable": "OxlintConfigurable",
     "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
+    "ts.rename.search.for.dynamic.occurrences": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/layout" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
     </key>
@@ -240,7 +234,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="19222000" />
+      <workItem from="1786817890168" duration="20584000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -354,7 +348,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786832568071</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Some basic UI over dinner">
+      <option name="closed" value="true" />
+      <created>1786837158562</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1786837158562</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +377,7 @@
     <MESSAGE value="checkpoint, i'd rather change the dto in rails than deal with nested keys in the fe" />
     <MESSAGE value="it wooooorks, switching over to jwts though i think" />
     <MESSAGE value="Neaaaat, vite just has a proxy built in, nevermind about jwts" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neaaaat, vite just has a proxy built in, nevermind about jwts" />
+    <MESSAGE value="Some basic UI over dinner" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some basic UI over dinner" />
   </component>
 </project>
