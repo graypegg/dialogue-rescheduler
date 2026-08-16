@@ -22,3 +22,10 @@
     margin-block-end: 1rem;
   }
 }
+
+.footer {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}

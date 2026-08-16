@@ -5,6 +5,8 @@ import { Input } from "../../ui/input/input.tsx";
 import { useCurrentUser } from "./hooks/current-user.tsx";
 import { Form } from "../../ui/form/form.tsx";
 import { FormRow } from "../../ui/form-row/form-row.tsx";
+import { Button } from "../../ui/button/button.tsx";
+import { CardFooter } from "../../ui/card/card-footer.tsx";
 
 export function LogInForm() {
   const navigate = useNavigate();
@@ -27,7 +29,9 @@ export function LogInForm() {
       <FormRow label="Password">
         <Input type="password" fieldName="password" />
       </FormRow>
-      <input type="submit" value="Log in" />
+      <CardFooter>
+        <Button intent="primary">Log in</Button>
+      </CardFooter>
     </Form>
   );
 }

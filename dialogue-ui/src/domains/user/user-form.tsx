@@ -6,6 +6,8 @@ import { Form } from "../../ui/form/form.tsx";
 import { FormRow } from "../../ui/form-row/form-row.tsx";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
+import { CardFooter } from "../../ui/card/card-footer.tsx";
+import { Button } from "../../ui/button/button.tsx";
 
 interface UserFormProps {
   user: User | null;
@@ -31,7 +33,9 @@ export function UserForm({ user, onSubmit }: UserFormProps) {
       <FormRow label="Password">
         <Input type="password" fieldName="password" />
       </FormRow>
-      <input type="submit" value={user ? "Save" : "Sign Up"} />
+      <CardFooter>
+        <Button intent="primary">{user ? "Save" : "Sign Up"}</Button>
+      </CardFooter>
     </Form>
   );
 }

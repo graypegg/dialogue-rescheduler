@@ -11,6 +11,12 @@
   --sky-base: #c4e6f1;
   --peach-base: #ec9876;
 
+  --grey-150: hsl(from var(--charcoal-base) h s calc(l * 7.5));
+  --grey-125: hsl(from var(--charcoal-base) h s calc(l * 7));
+  --grey-100: hsl(from var(--charcoal-base) h s calc(l * 6.5));
+  --grey-75: hsl(from var(--charcoal-base) h s calc(l * 5.5));
+  --grey-50: hsl(from var(--charcoal-base) h s calc(l * 5));
+
   --linen-150: hsl(from var(--linen-base) h s calc(l * 1.05));
   --charcoal-150: hsl(from var(--charcoal-base) h s calc(l * 5));
   --sky-150: hsl(from var(--sky-base) h s calc(l * 1.05));
