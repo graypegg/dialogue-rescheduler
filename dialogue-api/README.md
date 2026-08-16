@@ -1,24 +1,13 @@
-# README
+# dialogue-api
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+And this is just a big rails API-only app!
 
-Things you may want to cover:
+Sorry to throw this on you! It should be quite easy to get going if you happen to have a copy of Ruby 4 installed locally, however if not, there's a docker file that should start the service on the correct port as well!
 
-* Ruby version
+```shell
+cd ./dialogue-api
+docker build -t dialogue_api-dev .
+docker run --rm -p 3000:3000 dialogue_api-dev
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+That should get it running on port 3000. The vite proxy in `dialogue-ui` will be able to ping that.
