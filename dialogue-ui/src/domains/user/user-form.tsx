@@ -2,6 +2,8 @@ import { useForm } from "react-hook-form";
 import { makeUserFormState, type UserFormState } from "./types/user-form-state.ts";
 import type { User } from "./types/user.ts";
 import { Input } from "../../ui/input/input.tsx";
+import { Form } from "../../ui/form/form.tsx";
+import { FormRow } from "../../ui/form-row/form-row.tsx";
 
 interface UserFormProps {
   user: User | null;
@@ -14,16 +16,14 @@ export function UserForm({ user, onSubmit }: UserFormProps) {
   });
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label>
-        User Name:
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <FormRow label="Username">
         <Input {...register("user_name")} />
-      </label>
-      <label>
-        Password:
+      </FormRow>
+      <FormRow label="Password">
         <Input type="password" {...register("password")} />
-      </label>
+      </FormRow>
       <input type="submit" value={user ? "Save" : "Sign Up"} />
-    </form>
+    </Form>
   );
 }

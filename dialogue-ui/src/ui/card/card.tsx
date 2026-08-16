@@ -6,10 +6,10 @@ interface CardProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export function Card(props: PropsWithChildren<CardProps>) {
-  const { title, children } = props;
+  const { title, children, ...rest } = props;
 
   return (
-    <section className={classes.card} {...props}>
+    <section className={classes.card} {...rest}>
       {title && <header>{title}</header>}
       {children}
     </section>
