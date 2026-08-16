@@ -9,6 +9,7 @@
   justify-content: flex-end;
   padding: 0;
   margin: 0;
+  border-top: solid 1px var(--grey-125);
 
   li {
     display: contents;

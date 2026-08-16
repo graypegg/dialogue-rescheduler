@@ -2,11 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Improved cards a bit, added icons">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/columns/columns.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/columns/columns.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/error/error.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/error/error.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/heading/heading.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/heading/heading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/spinner/spinner.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/spinner/spinner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/api/helpers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/current-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/current-user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/api/create-user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/log-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/log-in.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/actions/actions.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/actions/actions.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/actions/actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/actions/actions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/button/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/button/button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/form-row/form-row.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/form-row/form-row.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/form/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/form/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/icon/icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/icon/icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/main.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +44,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Ruby Module" />
-        <option value="TypeScript File" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -42,41 +69,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Rails.dialogue-api.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP&quot;: &quot;1786811581716&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install --dev -D oxfmt.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @hookform/resolver zod.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @hookform/resolvers zod.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @tanstack/react-query.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install clsx.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install material-symbols@latest.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install react-hook-form.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install react-router.executor&quot;: &quot;Run&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib&quot;,
-    &quot;ts.rename.search.for.dynamic.occurrences&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Rails.dialogue-api.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786811581716",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.install --dev -D oxfmt.executor": "Run",
+    "npm.install @hookform/resolver zod.executor": "Run",
+    "npm.install @hookform/resolvers zod.executor": "Run",
+    "npm.install @tanstack/react-query.executor": "Run",
+    "npm.install clsx.executor": "Run",
+    "npm.install material-symbols@latest.executor": "Run",
+    "npm.install react-hook-form.executor": "Run",
+    "npm.install react-router.executor": "Run",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "Settings.Markdown",
+    "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
+    "ts.rename.search.for.dynamic.occurrences": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
@@ -86,11 +113,11 @@
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/columns" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/actions" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/pages" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/input" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/assets" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/login-form-state.ts" />
@@ -437,7 +464,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786903493233</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Improved cards a bit, added icons">
+      <option name="closed" value="true" />
+      <created>1786903802127</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1786903802127</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

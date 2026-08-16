@@ -19,6 +19,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
+      start_new_session_for @user
       render json: @user, status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_content

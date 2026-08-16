@@ -3,8 +3,12 @@ import { fetchAs } from "../../api/helpers.ts";
 import type { UserReadDTO } from "../../user/types/dto.ts";
 import { fromUserReadDTO } from "../../user/types/user.ts";
 
-function getCurrentUser() {
-  return fetchAs<UserReadDTO>("/session");
+async function getCurrentUser() {
+  try {
+    return await fetchAs<UserReadDTO>("/session");
+  } catch {
+    return null;
+  }
 }
 
 export function useGetCurrentUser() {

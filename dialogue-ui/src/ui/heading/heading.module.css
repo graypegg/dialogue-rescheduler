@@ -1,0 +1,33 @@
+.heading {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: var(--charcoal-100);
+  margin-block: 0.25rem;
+
+  & > * {
+    font-size: inherit;
+  }
+
+  &:has(+ p) {
+    margin-block-end: 0.5rem;
+    padding-block-end: 0.5rem;
+    border-bottom: 1px solid var(--grey-125);
+  }
+
+  &:is(h1) {
+    font-size: 1.75em;
+  }
+
+  &:is(h2) {
+    font-size: 1.5em;
+  }
+
+  &:is(h3) {
+    font-size: 1.25em;
+  }
+
+  &:is(h4) {
+    font-size: 1.1em;
+  }
+}

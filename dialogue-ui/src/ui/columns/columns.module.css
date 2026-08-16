@@ -1,0 +1,26 @@
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  container: columns / inline-size;
+}
+
+.equal {
+  & > * {
+    flex: 1 1 auto;
+  }
+}
+
+.sidebar {
+  & > * {
+    flex: 1 1 auto;
+
+    &:last-of-type {
+      flex: 0 1 33%;
+
+      @container columns (width < 720px) {
+        flex: 1 1 100%;
+      }
+    }
+  }
+}

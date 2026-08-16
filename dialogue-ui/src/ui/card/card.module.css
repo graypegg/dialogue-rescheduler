@@ -2,12 +2,14 @@
   border-radius: 10px;
   padding-inline: 1rem;
   background: #fff;
-  border: 1px solid var(--peach-150);
+  border: 1px solid var(--grey-125);
   box-shadow: 0 0 15px rgba(from var(--charcoal-150) r g b / 0.25);
   overflow: hidden;
 
   &:has(> header) {
     padding-block-end: 1rem;
+    border: 1px solid var(--peach-150);
+    box-shadow: 0 0 15px rgba(from var(--peach-50) r g b / 0.15);
   }
 
   &:not(:has(> header)) {

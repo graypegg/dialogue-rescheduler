@@ -20,20 +20,20 @@ interface LinkButtonProps extends BaseButtonProps, ComponentProps<typeof NavLink
 type ButtonProps = PropsWithChildren<ActionButtonProps> | PropsWithChildren<LinkButtonProps>;
 
 export function Button(props: ButtonProps) {
-  const { intent = "primary", children } = props;
+  const { intent = "primary", className, children } = props;
 
   if ("as" in props) {
     const { as, ...rest } = props;
     const AltComponent = as; // My own fault for calling this "as", JSX needs a PascalCased name and "as as AltComponent" is confusing to read.
     return (
-      <AltComponent className={clsx(classes.buttonBase, classes[intent])} {...rest}>
+      <AltComponent className={clsx(className, classes.buttonBase, classes[intent])} {...rest}>
         {children}
       </AltComponent>
     );
   }
 
   return (
-    <button className={clsx(classes.buttonBase, classes[intent])} {...props}>
+    <button className={clsx(className, classes.buttonBase, classes[intent])} {...props}>
       {children}
     </button>
   );

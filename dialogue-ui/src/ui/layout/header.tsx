@@ -2,13 +2,15 @@ import classes from "./layout.module.css";
 import logoUrl from "../../assets/logo.svg";
 import { NavLink, useNavigate } from "react-router";
 import { useCurrentUser } from "../../domains/auth/hooks/current-user.tsx";
+import { useLogOut } from "../../domains/auth/api/log-out.ts";
 
 export function Header() {
   const navigate = useNavigate();
-  const { currentUser, logOut } = useCurrentUser();
+  const { currentUser, isLoading } = useCurrentUser();
+  const { mutateAsync } = useLogOut();
 
   async function handleLogOut() {
-    await logOut();
+    await mutateAsync();
     navigate("/");
   }
 
@@ -22,6 +24,7 @@ export function Header() {
       </NavLink>
       {currentUser ? (
         <nav>
+          <span>{currentUser.user_name}</span>
           <a href="#" onClick={handleLogOut}>
             Logout
           </a>

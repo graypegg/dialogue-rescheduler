@@ -1,0 +1,21 @@
+@value form from '../form/form.module.css';
+
+.error {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.6rem 0.9rem 0.5rem;
+  border-radius: 3px;
+  background: #ffa2a2;
+  border: 1px solid #d47575;
+  color: #270202;
+  margin-block-end: 1rem;
+
+  span {
+    font-size: 1.5em;
+  }
+}
+
+:global(.form) .error {
+  grid-column: 1 / -1;
+}
