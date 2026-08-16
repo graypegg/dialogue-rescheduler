@@ -2,13 +2,6 @@ class UsersController < ApplicationController
   allow_unauthenticated_access only: %i[ create ]
   before_action :set_user, only: %i[ show update destroy ]
 
-  # GET /users
-  def index
-    @users = User.all
-
-    render json: @users
-  end
-
   # GET /users/1
   def show
   end
@@ -19,7 +12,6 @@ class UsersController < ApplicationController
 
     if @user.save
       start_new_session_for @user
-      render json: @user, status: :created, location: @user
     else
       render json: @user.errors, status: :unprocessable_content
     end

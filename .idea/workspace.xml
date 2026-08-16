@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Ok, loading states, now I'm done polishing">
-      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/index.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/sessions/show.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/users/_user.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Cleaned up things with jbuilder templates a bit">
+      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/_scheduling.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/users/create.json.jbuilder" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/api/schedulings.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/schedulings-table.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/types/dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/application_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/appointment.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/views/users/destroy.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/views/sessions/create.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/index.json.jbuilder" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/config/routes.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/landing.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,9 +25,9 @@
       <list>
         <option value="Ruby Module" />
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="Rails Text File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -50,49 +50,49 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Rails.dialogue-api.executor&quot;: &quot;Debug&quot;,
-    &quot;RailsCreateViewFileDialog.DEFAULT_TEMPLATE&quot;: &quot;Rails Text File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP&quot;: &quot;1786811581716&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-api/app/views/sessions&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install --dev -D oxfmt.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @hookform/resolver zod.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @hookform/resolvers zod.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install @tanstack/react-query.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install clsx.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install material-symbols@latest.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install react-hook-form.executor&quot;: &quot;Run&quot;,
-    &quot;npm.install react-router.executor&quot;: &quot;Run&quot;,
-    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.uml&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib&quot;,
-    &quot;ts.rename.search.for.dynamic.occurrences&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Rails.dialogue-api.executor": "Debug",
+    "RailsCreateViewFileDialog.DEFAULT_TEMPLATE": "Rails Text File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786916490724",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-api/app/views/users",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.install --dev -D oxfmt.executor": "Run",
+    "npm.install @hookform/resolver zod.executor": "Run",
+    "npm.install @hookform/resolvers zod.executor": "Run",
+    "npm.install @tanstack/react-query.executor": "Run",
+    "npm.install clsx.executor": "Run",
+    "npm.install material-symbols@latest.executor": "Run",
+    "npm.install react-hook-form.executor": "Run",
+    "npm.install react-router.executor": "Run",
+    "ruby.structure.view.model.defaults.configured": "true",
+    "settings.editor.selected.configurable": "reference.settings.ide.settings.uml",
+    "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
+    "ts.rename.search.for.dynamic.occurrences": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-api/app/views/users" />
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/api" />
       <recent name="$PROJECT_DIR$/dialogue-api/app/views/sessions" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/layout" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/columns" />
@@ -132,7 +132,7 @@
       <command value="npm install material-symbols@latest" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.dialogue-api">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dialogue-api" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="dialogue-api" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -227,6 +227,13 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-RM-261.25134.97" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -245,6 +252,7 @@
       <workItem from="1786817890168" duration="28489000" />
       <workItem from="1786893047811" duration="9141000" />
       <workItem from="1786902312541" duration="2000" />
+      <workItem from="1786916432093" duration="748000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -470,7 +478,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786913935832</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Cleaned up things with jbuilder templates a bit">
+      <option name="closed" value="true" />
+      <created>1786915873914</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1786915873914</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -488,7 +504,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="some basic planning, got a plan for a neat time block picker at least" />
     <MESSAGE value="oxfmt" />
     <MESSAGE value="bassssic user form" />
     <MESSAGE value="CORS for the rails api, whoops" />
@@ -513,6 +528,7 @@
     <MESSAGE value="Improved cards a bit, added icons" />
     <MESSAGE value="Oh damn, I need to stop polishing, this is just a bunch of tweaks to the auth + form components" />
     <MESSAGE value="Ok, loading states, now I'm done polishing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ok, loading states, now I'm done polishing" />
+    <MESSAGE value="Cleaned up things with jbuilder templates a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up things with jbuilder templates a bit" />
   </component>
 </project>
