@@ -3,17 +3,9 @@ import { useCreateUser } from "../domains/user/api/create-user.ts";
 import { Card } from "../ui/card/card.tsx";
 import { Icon } from "../ui/icon/icon.tsx";
 import { Error } from "../ui/error/error.tsx";
-import type { UserFormState } from "../domains/user/types/user-form-state.ts";
-import { useNavigate } from "react-router";
 
 export function SignUpPage() {
-  const navigate = useNavigate();
-  const { mutateAsync, error } = useCreateUser();
-
-  async function handleSubmit(userFormState: UserFormState) {
-    await mutateAsync(userFormState);
-    navigate("/");
-  }
+  const { mutate, error, isPending } = useCreateUser();
 
   return (
     <Card
@@ -25,7 +17,7 @@ export function SignUpPage() {
       }
     >
       {error && <Error error={error} />}
-      <UserForm user={null} onSubmit={handleSubmit} />
+      <UserForm user={null} onSubmit={mutate} isPending={isPending} />
     </Card>
   );
 }

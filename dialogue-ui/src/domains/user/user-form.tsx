@@ -10,13 +10,15 @@ import { Actions } from "../../ui/actions/actions.tsx";
 import { Button } from "../../ui/button/button.tsx";
 import { NavLink } from "react-router";
 import { Icon } from "../../ui/icon/icon.tsx";
+import { Spinner } from "../../ui/spinner/spinner.tsx";
 
 interface UserFormProps {
   user: User | null;
   onSubmit: (formState: UserFormState) => void;
+  isPending: boolean;
 }
 
-export function UserForm({ user, onSubmit }: UserFormProps) {
+export function UserForm({ user, onSubmit, isPending }: UserFormProps) {
   const form = useForm({
     defaultValues: makeUserFormState(user),
     resolver: zodResolver(
@@ -42,7 +44,10 @@ export function UserForm({ user, onSubmit }: UserFormProps) {
             <Icon name="arrow_forward" />
           </Button>
         )}
-        <Button intent="primary">{user ? "Save" : "Sign Up"}</Button>
+        <Button intent="primary">
+          {user ? "Save" : "Sign Up"}
+          {isPending && <Spinner />}
+        </Button>
       </Actions>
     </Form>
   );
