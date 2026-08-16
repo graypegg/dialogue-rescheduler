@@ -1,19 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Cleaned up things with jbuilder templates a bit">
-      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/_scheduling.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-api/app/views/users/create.json.jbuilder" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/api/schedulings.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/schedulings-table.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/types/dto.ts" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Making up a demo data on initial sign up now">
+      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/types/scheduling.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/users_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/appointment.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/appointment.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/schedulings_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/schedulings_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/_scheduling.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/_scheduling.json.jbuilder" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/index.json.jbuilder" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/views/schedulings/index.json.jbuilder" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/landing.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/landing.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/api/schedulings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/api/schedulings.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/schedulings-table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/schedulings-table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/types/dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/schedulings/types/dto.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +22,8 @@
         <option value="Ruby Module" />
         <option value="CSS File" />
         <option value="Rails Text File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -252,7 +248,7 @@
       <workItem from="1786817890168" duration="28489000" />
       <workItem from="1786893047811" duration="9141000" />
       <workItem from="1786902312541" duration="2000" />
-      <workItem from="1786916432093" duration="748000" />
+      <workItem from="1786916432093" duration="1775000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -486,7 +482,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786915873914</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Making up a demo data on initial sign up now">
+      <option name="closed" value="true" />
+      <created>1786917204532</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1786917204533</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -504,7 +508,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="oxfmt" />
     <MESSAGE value="bassssic user form" />
     <MESSAGE value="CORS for the rails api, whoops" />
     <MESSAGE value="CORS for the rails api and forgot to add back the cookies stuff, whoops" />
@@ -529,6 +532,7 @@
     <MESSAGE value="Oh damn, I need to stop polishing, this is just a bunch of tweaks to the auth + form components" />
     <MESSAGE value="Ok, loading states, now I'm done polishing" />
     <MESSAGE value="Cleaned up things with jbuilder templates a bit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Cleaned up things with jbuilder templates a bit" />
+    <MESSAGE value="Making up a demo data on initial sign up now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Making up a demo data on initial sign up now" />
   </component>
 </project>

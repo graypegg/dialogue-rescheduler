@@ -3,7 +3,7 @@ import { useCurrentUser } from "../auth/hooks/current-user.tsx";
 
 export function SchedulingsTable() {
   const { currentUser } = useCurrentUser();
-  const { data } = useSchedulings(currentUser);
+  const { schedulings } = useSchedulings(currentUser);
 
-  return JSON.stringify(data);
+  return JSON.stringify(schedulings);
 }
