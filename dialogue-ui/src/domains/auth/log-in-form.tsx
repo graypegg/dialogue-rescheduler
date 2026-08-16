@@ -1,12 +1,13 @@
 import { useForm } from "react-hook-form";
 import type { LogInFormState } from "./types/log-in-form-state.ts";
-import { useNavigate } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { Input } from "../../ui/input/input.tsx";
 import { useCurrentUser } from "./hooks/current-user.tsx";
 import { Form } from "../../ui/form/form.tsx";
 import { FormRow } from "../../ui/form-row/form-row.tsx";
 import { Button } from "../../ui/button/button.tsx";
-import { CardFooter } from "../../ui/card/card-footer.tsx";
+import { Actions } from "../../ui/actions/actions.tsx";
+import { Icon } from "../../ui/icon/icon.tsx";
 
 export function LogInForm() {
   const navigate = useNavigate();
@@ -29,9 +30,13 @@ export function LogInForm() {
       <FormRow label="Password">
         <Input type="password" fieldName="password" />
       </FormRow>
-      <CardFooter>
+      <Actions>
+        <Button as={NavLink} intent="secondary" to="/sign-up">
+          Create an account
+          <Icon name="arrow_forward" />
+        </Button>
         <Button intent="primary">Log in</Button>
-      </CardFooter>
+      </Actions>
     </Form>
   );
 }

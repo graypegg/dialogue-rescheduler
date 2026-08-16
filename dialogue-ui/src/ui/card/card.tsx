@@ -1,14 +1,14 @@
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import type { HTMLAttributes, PropsWithChildren, ReactElement } from "react";
 import classes from "./card.module.css";
 
 interface CardProps extends HTMLAttributes<HTMLDivElement> {
-  title?: string;
+  header?: ReactElement;
 }
 
-export function Card({ title, children, ...rest }: PropsWithChildren<CardProps>) {
+export function Card({ header, children, ...rest }: PropsWithChildren<CardProps>) {
   return (
     <section className={classes.card} {...rest}>
-      {title && <header>{title}</header>}
+      {header && <header>{header}</header>}
       {children}
     </section>
   );

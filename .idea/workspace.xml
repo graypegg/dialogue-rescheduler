@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Not sure about this card footer, but ehhh">
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Improved cards a bit, added icons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-in.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-in.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-out.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-out.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/log-in.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/log-in.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/pages/sign-up.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/pages/sign-up.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
     &quot;npm.install @hookform/resolvers zod.executor&quot;: &quot;Run&quot;,
     &quot;npm.install @tanstack/react-query.executor&quot;: &quot;Run&quot;,
     &quot;npm.install clsx.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install material-symbols@latest.executor&quot;: &quot;Run&quot;,
     &quot;npm.install react-hook-form.executor&quot;: &quot;Run&quot;,
     &quot;npm.install react-router.executor&quot;: &quot;Run&quot;,
     &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
@@ -86,11 +86,11 @@
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/user/api" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/actions" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/pages" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui/input" />
       <recent name="$PROJECT_DIR$/dialogue-ui/src/assets" />
-      <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks" />
     </key>
     <key name="es6.move.members.recent.items">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/domains/auth/types/login-form-state.ts" />
@@ -120,9 +120,10 @@
       <command value="bin/rails g model Appointment topic:string start:datetime end:datetime" />
       <command value="rails g model Appointment topic:string start:datetime end:datetime" />
       <command value="rails db:migrate" />
+      <command value="npm install material-symbols@latest" />
     </option>
   </component>
-  <component name="RunManager" selected="Rails.dialogue-api">
+  <component name="RunManager" selected="npm.dev">
     <configuration name="dialogue-api" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="dialogue-api" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -217,13 +218,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-RM-261.25134.97" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" RAKE_SPRING_PRE_LOADER_OPTION="true" RAILS_SPRING_PRE_LOADER_OPTION="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -240,7 +234,8 @@
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
       <workItem from="1786817890168" duration="28489000" />
-      <workItem from="1786893047811" duration="4276000" />
+      <workItem from="1786893047811" duration="9141000" />
+      <workItem from="1786902312541" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -426,7 +421,23 @@
       <option name="project" value="LOCAL" />
       <updated>1786896909550</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Why was I navigating twice, whoops">
+      <option name="closed" value="true" />
+      <created>1786897386626</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1786897386626</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Improved cards a bit, added icons">
+      <option name="closed" value="true" />
+      <created>1786903493233</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1786903493233</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +455,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="moved everything one directory deep so we can fit the front end in" />
     <MESSAGE value="fresh vite project added" />
     <MESSAGE value="readme blurb, clearing out default vite junk" />
     <MESSAGE value="some basic planning, got a plan for a neat time block picker at least" />
@@ -468,6 +478,8 @@
     <MESSAGE value="And starting to flesh out the API for schedules" />
     <MESSAGE value="slightly nicer header" />
     <MESSAGE value="Not sure about this card footer, but ehhh" />
-    <option name="LAST_COMMIT_MESSAGE" value="Not sure about this card footer, but ehhh" />
+    <MESSAGE value="Why was I navigating twice, whoops" />
+    <MESSAGE value="Improved cards a bit, added icons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improved cards a bit, added icons" />
   </component>
 </project>

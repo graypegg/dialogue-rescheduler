@@ -1,7 +1,7 @@
 .primary {
-  --background: linear-gradient(45deg, var(--sky-75), var(--sky-100));
-  --border: var(--sky-75);
-  --text: var(--sky-50);
+  --background: linear-gradient(45deg, var(--peach-100), var(--peach-150));
+  --border: var(--peach-100);
+  --text: #fff;
 }
 
 .secondary {
@@ -10,22 +10,24 @@
   --text: var(--charcoal-100);
 }
 
-.danger {
-  --background: linear-gradient(45deg, var(--peach-100), var(--peach-150));
-  --border: var(--peach-100);
-  --text: #fff;
-}
-
-.base {
+.buttonBase {
   border-radius: 3px;
   cursor: pointer;
-  padding: 0.5rem 0.3rem;
+  padding: 0.5rem 1rem;
   background: var(--background);
   border: 1px solid var(--border);
   color: var(--text);
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.95em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
 
   &:hover {
     border: 1px solid hsl(from var(--border) h s calc(l * 0.8));
+    filter: brightness(1.05);
   }
 
   &:active {

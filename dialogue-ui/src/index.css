@@ -4,6 +4,8 @@
 
 :root {
   font-family: Helvetica, sans-serif;
+  color: var(--charcoal-125);
+  font-size: 0.9rem;
 
   /* Grabbed right out of the brand guide >:) https://dialoguebrand.myportfolio.com/fonts */
   --linen-base: #ffefe2;
@@ -23,7 +25,7 @@
   --peach-150: hsl(from var(--peach-base) h s calc(l * 1.05));
 
   --linen-125: hsl(from var(--linen-base) h s calc(l * 1.025));
-  --charcoal-125: hsl(from var(--charcoal-base) h s calc(l * 2.5));
+  --charcoal-125: hsl(from var(--charcoal-base) h s calc(l * 2));
   --sky-125: hsl(from var(--sky-base) h s calc(l * 1.025));
   --peach-125: hsl(from var(--peach-base) h s calc(l * 1.025));
 
@@ -46,9 +48,8 @@
 body {
   margin: 0;
   background: var(--linen-125);
-  color: var(--charcoal-100);
 }
 
 a {
-  color: var(--charcoal-100);
+  color: var(--charcoal-125);
 }

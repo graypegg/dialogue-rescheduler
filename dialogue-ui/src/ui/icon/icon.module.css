@@ -1,0 +1,11 @@
+@import "material-symbols";
+
+.icon {
+  composes: material-symbols-rounded from "material-symbols";
+  font-variation-settings: "FILL" 1;
+  font-size: 1.4em;
+
+  /* The odd-ball baseline in the material-icons font that Google provides will forever haunt my dreams... */
+  vertical-align: middle;
+  transform: translateY(-1px);
+}

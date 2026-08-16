@@ -6,8 +6,10 @@ import { Form } from "../../ui/form/form.tsx";
 import { FormRow } from "../../ui/form-row/form-row.tsx";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { CardFooter } from "../../ui/card/card-footer.tsx";
+import { Actions } from "../../ui/actions/actions.tsx";
 import { Button } from "../../ui/button/button.tsx";
+import { NavLink } from "react-router";
+import { Icon } from "../../ui/icon/icon.tsx";
 
 interface UserFormProps {
   user: User | null;
@@ -33,9 +35,15 @@ export function UserForm({ user, onSubmit }: UserFormProps) {
       <FormRow label="Password">
         <Input type="password" fieldName="password" />
       </FormRow>
-      <CardFooter>
+      <Actions>
+        {!user && (
+          <Button as={NavLink} intent="secondary" to="/log-in">
+            Already have an account?
+            <Icon name="arrow_forward" />
+          </Button>
+        )}
         <Button intent="primary">{user ? "Save" : "Sign Up"}</Button>
-      </CardFooter>
+      </Actions>
     </Form>
   );
 }
