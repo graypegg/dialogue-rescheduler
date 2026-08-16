@@ -10,7 +10,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_08_15_160155) do
+ActiveRecord::Schema[8.1].define(version: 2026_08_16_023146) do
+  create_table "appointments", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "end"
+    t.datetime "start"
+    t.string "topic"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "clinicians", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.string "name"
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "schedulings", force: :cascade do |t|
+    t.integer "appointment_id", null: false
+    t.integer "clinician_id", null: false
+    t.datetime "created_at", null: false
+    t.boolean "is_canceled"
+    t.datetime "updated_at", null: false
+    t.integer "user_id", null: false
+    t.index ["appointment_id"], name: "index_schedulings_on_appointment_id"
+    t.index ["clinician_id"], name: "index_schedulings_on_clinician_id"
+    t.index ["user_id"], name: "index_schedulings_on_user_id"
+  end
+
   create_table "sessions", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.string "ip_address"
@@ -28,5 +54,8 @@ ActiveRecord::Schema[8.1].define(version: 2026_08_15_160155) do
     t.index ["user_name"], name: "index_users_on_user_name", unique: true
   end
 
+  add_foreign_key "schedulings", "appointments"
+  add_foreign_key "schedulings", "clinicians"
+  add_foreign_key "schedulings", "users"
   add_foreign_key "sessions", "users"
 end

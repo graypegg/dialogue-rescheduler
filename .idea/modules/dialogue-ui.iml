@@ -6,6 +6,5 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../../dialogue-ui" />
     <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

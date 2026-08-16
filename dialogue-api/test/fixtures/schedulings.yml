@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  appointment: one
+  clinician: one
+  user: one
+  is_canceled: false
+
+two:
+  appointment: two
+  clinician: two
+  user: two
+  is_canceled: false

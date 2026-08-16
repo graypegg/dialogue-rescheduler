@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Using the rhf form context now, cleaaaaan">
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Zod schemas for form state">
+      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-ui.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/form/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/form/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/input/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +69,7 @@
     "npm.install react-hook-form.executor": "Run",
     "npm.install react-router.executor": "Run",
     "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "OxlintConfigurable",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable",
     "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
     "ts.rename.search.for.dynamic.occurrences": "true",
     "vue.rearranger.settings.migration": "true"
@@ -116,6 +113,10 @@
       <command value="npm install clsx" />
       <command value="npm install @hookform/resolver zod" />
       <command value="npm install @hookform/resolvers zod" />
+      <command value="rails g model Clinician name:string " />
+      <command value="bin/rails g model Clinician name:string " />
+      <command value="bin/rails g model Appointment topic:string start:datetime end:datetime" />
+      <command value="rails g model Appointment topic:string start:datetime end:datetime" />
     </option>
   </component>
   <component name="RunManager" selected="npm.dev">
@@ -235,7 +236,7 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="26974000" />
+      <workItem from="1786817890168" duration="28351000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -389,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786845321679</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Zod schemas for form state">
+      <option name="closed" value="true" />
+      <created>1786846529563</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1786846529563</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -426,6 +435,7 @@
     <MESSAGE value="Nicer-ish forms. I still need to actually dig into the design a bit more here" />
     <MESSAGE value="That feels a bit cleaner" />
     <MESSAGE value="Using the rhf form context now, cleaaaaan" />
-    <option name="LAST_COMMIT_MESSAGE" value="Using the rhf form context now, cleaaaaan" />
+    <MESSAGE value="Zod schemas for form state" />
+    <option name="LAST_COMMIT_MESSAGE" value="Zod schemas for form state" />
   </component>
 </project>
