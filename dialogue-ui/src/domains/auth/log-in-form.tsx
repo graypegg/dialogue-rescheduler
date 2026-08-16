@@ -17,7 +17,7 @@ export function LogInForm() {
   });
 
   async function onSubmit(logInFormState: LogInFormState) {
-    logIn(logInFormState);
+    await logIn(logInFormState);
     navigate("/");
   }
 

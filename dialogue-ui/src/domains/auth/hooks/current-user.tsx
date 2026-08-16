@@ -7,15 +7,15 @@ import { useLogOut } from "../api/log-out.ts";
 export interface CurrentUser {
   isLoading: boolean;
   currentUser: User | null;
-  logIn: (logInParams: UserLogInParams) => void;
-  logOut: () => void;
+  logIn: (logInParams: UserLogInParams) => Promise<unknown>;
+  logOut: () => Promise<unknown>;
 }
 
 const currentUserContext = createContext<CurrentUser>({
   isLoading: false,
   currentUser: null,
-  logIn: () => {},
-  logOut: () => {},
+  logIn: () => Promise.resolve(),
+  logOut: () => Promise.resolve(),
 });
 
 export function CurrentUserProvider({ children }: PropsWithChildren<{}>) {
@@ -28,8 +28,8 @@ export function CurrentUserProvider({ children }: PropsWithChildren<{}>) {
       value={{
         isLoading,
         currentUser,
-        logIn: logIn.mutate,
-        logOut: logOut.mutate,
+        logIn: logIn.mutateAsync,
+        logOut: logOut.mutateAsync,
       }}
     >
       {children}

@@ -1,10 +1,16 @@
 import classes from "./layout.module.css";
 import logoUrl from "../../assets/logo.svg";
-import { NavLink } from "react-router";
+import { NavLink, useNavigate } from "react-router";
 import { useCurrentUser } from "../../domains/auth/hooks/current-user.tsx";
 
 export function Header() {
+  const navigate = useNavigate();
   const { currentUser, logOut } = useCurrentUser();
+
+  async function handleLogOut() {
+    await logOut();
+    navigate("/");
+  }
 
   return (
     <header className={classes.header}>
@@ -16,7 +22,7 @@ export function Header() {
       </NavLink>
       {currentUser ? (
         <nav>
-          <a href="#" onClick={logOut}>
+          <a href="#" onClick={handleLogOut}>
             Logout
           </a>
         </nav>

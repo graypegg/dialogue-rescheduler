@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="slightly nicer header">
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/button/button.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/button/button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card-footer.tsx" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Not sure about this card footer, but ehhh">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/concerns/authentication.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/concerns/authentication.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-in.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-in.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-out.ts" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/api/log-out.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/hooks/current-user.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/auth/log-in-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/domains/user/user-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/card/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +240,7 @@
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
       <workItem from="1786817890168" duration="28489000" />
-      <workItem from="1786893047811" duration="3753000" />
+      <workItem from="1786893047811" duration="4276000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -423,7 +418,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786893752577</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Not sure about this card footer, but ehhh">
+      <option name="closed" value="true" />
+      <created>1786896909550</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1786896909550</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,6 +467,7 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
     <MESSAGE value="And starting to flesh out the API for schedules" />
     <MESSAGE value="slightly nicer header" />
-    <option name="LAST_COMMIT_MESSAGE" value="slightly nicer header" />
+    <MESSAGE value="Not sure about this card footer, but ehhh" />
+    <option name="LAST_COMMIT_MESSAGE" value="Not sure about this card footer, but ehhh" />
   </component>
 </project>
