@@ -8,4 +8,10 @@ class User < ApplicationRecord
   validates :password, length: { minimum: 6 }, presence: true, on: :create
 
   normalizes :user_name, with: ->(e) { e.strip.downcase }
+
+  def assign_first_clinician
+    clinician = Clinician.create(name: Faker::Name.unique.name)
+    appointment = Appointment.create(topic: "Consultation", start: 5.days.from_now, end: 5.days.from_now + 30.minutes)
+    Scheduling.create(clinician:, appointment:, user: self, is_canceled: true)
+  end
 end

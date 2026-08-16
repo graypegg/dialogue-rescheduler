@@ -3,16 +3,15 @@ class SessionsController < ApplicationController
 
   def show
     if authenticated?
-      render json: Current.user
+      @user = Current.user
     else
-      render json: {}, status: 401
+      render json: { error: 'Not authenticated' }, status: 401
     end
   end
 
   def create
-    if user = User.authenticate_by(params.permit(:user_name, :password))
-      start_new_session_for user
-      render json: user
+    if @user = User.authenticate_by(params.permit(:user_name, :password))
+      start_new_session_for @user
     else
       render json: { error: "Username or password incorrect" }, status: 401
     end
@@ -20,6 +19,6 @@ class SessionsController < ApplicationController
 
   def destroy
     terminate_session
-    render json: { error: false }
+    render json: { }
   end
 end
