@@ -16,7 +16,7 @@ export interface Scheduling {
 export function fromSchedulingDTO(dto: SchedulingDTO): Scheduling {
   return {
     id: dto.id,
-    isCanceled: false,
+    isCanceled: dto.is_canceled,
     appointment: {
       id: dto.appointment.id,
       topic: dto.appointment.topic,
