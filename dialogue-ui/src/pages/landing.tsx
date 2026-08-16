@@ -1,4 +1,4 @@
-import { useCurrentUser } from "../../auth/hooks/current-user.tsx";
+import { useCurrentUser } from "../domains/auth/hooks/current-user.tsx";
 import { useEffect } from "react";
 import { useNavigate } from "react-router";
 

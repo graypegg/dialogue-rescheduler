@@ -1,7 +1,7 @@
 import classes from "./layout.module.css";
-import logoUrl from "../assets/logo.svg";
+import logoUrl from "../../assets/logo.svg";
 import { NavLink } from "react-router";
-import { useCurrentUser } from "../domains/auth/hooks/current-user.tsx";
+import { useCurrentUser } from "../../domains/auth/hooks/current-user.tsx";
 
 export function Header() {
   const { currentUser, logOut } = useCurrentUser();

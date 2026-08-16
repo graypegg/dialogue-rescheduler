@@ -1,6 +1,6 @@
-import { UserForm } from "../user-form.tsx";
-import { useCreateUser } from "../api/create-user.ts";
-import { Card } from "../../../ui/card/card.tsx";
+import { UserForm } from "../domains/user/user-form.tsx";
+import { useCreateUser } from "../domains/user/api/create-user.ts";
+import { Card } from "../ui/card/card.tsx";
 
 export function SignUpPage() {
   const createUser = useCreateUser();
