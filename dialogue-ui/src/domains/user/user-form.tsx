@@ -11,17 +11,17 @@ interface UserFormProps {
 }
 
 export function UserForm({ user, onSubmit }: UserFormProps) {
-  const { register, handleSubmit } = useForm<UserFormState>({
+  const form = useForm<UserFormState>({
     defaultValues: makeUserFormState(user),
   });
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form<UserFormState> form={form} onSubmit={onSubmit}>
       <FormRow label="Username">
-        <Input {...register("user_name")} />
+        <Input fieldName="user_name" />
       </FormRow>
       <FormRow label="Password">
-        <Input type="password" {...register("password")} />
+        <Input type="password" fieldName="password" />
       </FormRow>
       <input type="submit" value={user ? "Save" : "Sign Up"} />
     </Form>

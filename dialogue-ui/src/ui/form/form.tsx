@@ -1,12 +1,22 @@
-import type { HTMLAttributes, PropsWithChildren } from "react";
+import { type PropsWithChildren } from "react";
 import classes from "./form.module.css";
+import { type FieldValues, FormProvider, type UseFormReturn } from "react-hook-form";
 
-export function Form(props: PropsWithChildren<HTMLAttributes<HTMLFormElement>>) {
-  const { children } = props;
+interface FormProps<T extends FieldValues> {
+  onSubmit: (formState: T) => void;
+  form: UseFormReturn<T, any, T>;
+}
 
+export function Form<T extends FieldValues>({
+  children,
+  onSubmit,
+  form,
+}: PropsWithChildren<FormProps<T>>) {
   return (
-    <form className={classes.form} {...props}>
-      {children}
-    </form>
+    <FormProvider {...form}>
+      <form className={classes.form} onSubmit={form.handleSubmit(onSubmit)}>
+        {children}
+      </form>
+    </FormProvider>
   );
 }

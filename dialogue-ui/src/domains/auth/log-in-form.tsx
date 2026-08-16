@@ -10,7 +10,7 @@ export function LogInForm() {
   const navigate = useNavigate();
   const { logIn } = useCurrentUser();
 
-  const { register, handleSubmit } = useForm<LogInFormState>({
+  const form = useForm<LogInFormState>({
     defaultValues: { user_name: "", password: "" },
   });
 
@@ -20,12 +20,12 @@ export function LogInForm() {
   }
 
   return (
-    <Form onSubmit={handleSubmit(onSubmit)}>
+    <Form<LogInFormState> form={form} onSubmit={onSubmit}>
       <FormRow label="Username">
-        <Input {...register("user_name")} />
+        <Input fieldName="user_name" />
       </FormRow>
       <FormRow label="Password">
-        <Input type="password" {...register("password")} />
+        <Input type="password" fieldName="password" />
       </FormRow>
       <input type="submit" value="Log in" />
     </Form>
