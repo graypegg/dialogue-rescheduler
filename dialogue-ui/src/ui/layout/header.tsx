@@ -8,8 +8,11 @@ export function Header() {
 
   return (
     <header className={classes.header}>
-      <NavLink to="/">
+      <NavLink to="/" className={classes.logo}>
         <img alt="Rescheduler logo, not actually a Dialogue product" src={logoUrl} />
+        Dialogue
+        <br />
+        Rescheduler
       </NavLink>
       {currentUser ? (
         <nav>

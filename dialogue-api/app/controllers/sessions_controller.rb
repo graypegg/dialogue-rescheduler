@@ -15,7 +15,7 @@ class SessionsController < ApplicationController
       start_new_session_for user
       render json: user
     else
-      render json: { error: "Username or password incorrect" }
+      render json: { error: "Username or password incorrect" }, status: 401
     end
   end
 

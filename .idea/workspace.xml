@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="Zod schemas for form state">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/dialogue-ui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/dialogue-ui.iml" afterDir="false" />
+    <list default="true" id="ba2ceb4b-0f0c-4dca-94d4-0ced1be49454" name="Changes" comment="And starting to flesh out the API for schedules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/models/user.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-api/app/controllers/sessions_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/dialogue-ui/src/ui/layout/layout.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,40 +41,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Rails.dialogue-api.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP": "1786811581716",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "last_opened_file_path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.install --dev -D oxfmt.executor": "Run",
-    "npm.install @hookform/resolver zod.executor": "Run",
-    "npm.install @hookform/resolvers zod.executor": "Run",
-    "npm.install @tanstack/react-query.executor": "Run",
-    "npm.install clsx.executor": "Run",
-    "npm.install react-hook-form.executor": "Run",
-    "npm.install react-router.executor": "Run",
-    "ruby.structure.view.model.defaults.configured": "true",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable",
-    "ts.external.directory.path": "/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib",
-    "ts.rename.search.for.dynamic.occurrences": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Rails.dialogue-api.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ruby.rubocop.migration.global.runOnSaveToExternalFormatter&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.lang.ruby.rbs.tools.collection.workspace.sync.RbsCollectionUpdateProjectActivity#LAST_UPDATE_TIMESTAMP&quot;: &quot;1786811581716&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/src/ui&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install --dev -D oxfmt.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install @hookform/resolver zod.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install @hookform/resolvers zod.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install @tanstack/react-query.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install clsx.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install react-hook-form.executor&quot;: &quot;Run&quot;,
+    &quot;npm.install react-router.executor&quot;: &quot;Run&quot;,
+    &quot;ruby.structure.view.model.defaults.configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/gray/RubymineProjects/interviews/dialogue/dialogue-ui/node_modules/typescript/lib&quot;,
+    &quot;ts.rename.search.for.dynamic.occurrences&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/dialogue-ui/src/ui" />
@@ -117,9 +117,10 @@
       <command value="bin/rails g model Clinician name:string " />
       <command value="bin/rails g model Appointment topic:string start:datetime end:datetime" />
       <command value="rails g model Appointment topic:string start:datetime end:datetime" />
+      <command value="rails db:migrate" />
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev">
+  <component name="RunManager" selected="Rails.dialogue-api">
     <configuration name="dialogue-api" type="RailsRunConfigurationType" factoryName="Rails">
       <module name="dialogue-api" />
       <predefined_log_file enabled="true" id="RUBY_RAILS_SERVER" />
@@ -236,7 +237,8 @@
       <workItem from="1786811651861" duration="185000" />
       <workItem from="1786811847593" duration="50000" />
       <workItem from="1786811903984" duration="5389000" />
-      <workItem from="1786817890168" duration="28351000" />
+      <workItem from="1786817890168" duration="28489000" />
+      <workItem from="1786893047811" duration="676000" />
     </task>
     <task id="LOCAL-00001" summary="moved everything one directory deep so we can fit the front end in">
       <option name="closed" value="true" />
@@ -398,7 +400,15 @@
       <option name="project" value="LOCAL" />
       <updated>1786846529563</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="And starting to flesh out the API for schedules">
+      <option name="closed" value="true" />
+      <created>1786847798509</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1786847798509</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,6 +446,8 @@
     <MESSAGE value="That feels a bit cleaner" />
     <MESSAGE value="Using the rhf form context now, cleaaaaan" />
     <MESSAGE value="Zod schemas for form state" />
-    <option name="LAST_COMMIT_MESSAGE" value="Zod schemas for form state" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'" />
+    <MESSAGE value="And starting to flesh out the API for schedules" />
+    <option name="LAST_COMMIT_MESSAGE" value="And starting to flesh out the API for schedules" />
   </component>
 </project>
